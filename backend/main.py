@@ -3,6 +3,12 @@ from pydantic import BaseModel
 import joblib
 import os
 import sys
+import nltk
+try:
+    nltk.data.find('tokenizers/punkt_tab')
+except LookupError:
+    nltk.download('punkt_tab')
+    nltk.download('stopwords')
 
 # In Docker, /app is the root. This helps Python find the 'src' folder.
 # We use the absolute path of the current file to stay flexible.

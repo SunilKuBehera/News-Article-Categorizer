@@ -1,6 +1,13 @@
 import streamlit as st
 import requests
 import os
+import nltk
+try:
+    nltk.data.find('tokenizers/punkt_tab')
+except LookupError:
+    nltk.download('punkt_tab')
+    nltk.download('stopwords')
+
 
 # 1. Page Configuration
 st.set_page_config(page_title="News Article Categorizer", layout="wide")
