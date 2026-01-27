@@ -205,3 +205,25 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- ML Project Specifics ---
+# Ignore your local datasets (don't push 20MB+ CSVs to GitHub)
+data/*.csv
+data/*.json
+
+# Ignore trained models (Models should be in a Registry/Cloud, not Git)
+models/*.pkl
+models/*.h5
+models/*.joblib
+models/*.onnx
+
+# MLflow tracking data (this folder gets huge very fast)
+mlruns/
+mlflow.db
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables (Critical for security if you add API keys later)
+.env

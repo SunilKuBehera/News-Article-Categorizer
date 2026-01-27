@@ -1,0 +1,22 @@
+services:
+  # For FastAPI
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/models  # Keeps your trained .pkl files accessible
+
+  # For Streamlit UI
+  frontend:
+    build:
+      context: .        # Set context to root so it sees requirements.txt
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - BACKEND_URL=http://backend:8000
+    depends_on:
+      - backend         # Ensures backend starts before the UI
