@@ -1,0 +1,26 @@
+=== Classification Report (BoW) ===
+               precision    recall  f1-score   support
+
+     business       0.98      0.94      0.96       101
+entertainment       1.00      0.91      0.95        81
+     politics       0.92      0.99      0.95        83
+        sport       0.99      1.00      0.99        98
+         tech       0.94      0.99      0.96        82
+
+     accuracy                           0.97       445
+    macro avg       0.97      0.97      0.97       445
+ weighted avg       0.97      0.97      0.97       445
+
+
+=== Classification Report (TF-IDF) ===
+               precision    recall  f1-score   support
+
+     business       0.95      0.95      0.95       101
+entertainment       1.00      0.89      0.94        81
+     politics       0.92      0.99      0.95        83
+        sport       0.99      1.00      0.99        98
+         tech       0.95      0.98      0.96        82
+
+     accuracy                           0.96       445
+    macro avg       0.96      0.96      0.96       445
+ weighted avg       0.96      0.96      0.96       445

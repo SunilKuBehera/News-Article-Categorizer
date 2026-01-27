@@ -7,3 +7,5 @@ pandas
 nltk
 streamlit
 requests
+matplotlib
+seaborn

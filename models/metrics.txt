@@ -1,0 +1,2 @@
+BoW Accuracy: 0.9663
+TF-IDF Accuracy: 0.9618
