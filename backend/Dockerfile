@@ -5,7 +5,7 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # Copy requirements from the root (since context is .)
-COPY requirements.txt .
+COPY ./requirements.txt .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt

@@ -211,10 +211,6 @@ __marimo__/
 data/*.csv
 data/*.json
 
-# Ignore trained models (Models should be in a Registry/Cloud, not Git)
-models/*.h5
-models/*.onnx
-
 # MLflow tracking data (this folder gets huge very fast)
 mlruns/
 mlflow.db

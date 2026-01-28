@@ -19,7 +19,7 @@ News articles span a vast spectrum of topics. Manually sorting this volume of da
 ## 🛠️ Tech Stack
 
 * **Frontend:** [Streamlit](https://streamlit.io/) (Community Cloud)
-* **Backend:** [FastAPI](https://fastapi.tiangolo.com/) (Hosted on Railway)
+* **Backend:** [FastAPI](https://fastapi.tiangolo.com/) (Hosted on Render)
 * **Machine Learning:** Scikit-Learn, Pandas, NumPy
 * **NLP:** NLTK (Tokenization, Stopword removal)
 * **Containerization:** Docker & Docker Compose
