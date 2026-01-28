@@ -212,9 +212,7 @@ data/*.csv
 data/*.json
 
 # Ignore trained models (Models should be in a Registry/Cloud, not Git)
-models/*.pkl
 models/*.h5
-models/*.joblib
 models/*.onnx
 
 # MLflow tracking data (this folder gets huge very fast)
