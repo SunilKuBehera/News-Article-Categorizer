@@ -5,7 +5,5 @@ joblib
 scikit-learn
 pandas
 nltk
-streamlit
-requests
 matplotlib
 seaborn
