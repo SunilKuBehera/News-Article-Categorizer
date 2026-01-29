@@ -1,4 +1,4 @@
-# 🗞️ News Article Categorizer
+# 🗞️ News Article Categorizer | [Live Demo](https://news-article-categorizer.streamlit.app/)
 
 An end-to-end Machine Learning application that automatically classifies news articles into five distinct categories: **Business, Entertainment, Politics, Sport, and Tech**. This project implements a full-stack architecture, comparing **Bag of Words (BoW)** and **TF-IDF** vectorization techniques using a **Multinomial Naive Bayes** classifier.
 
