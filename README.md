@@ -58,17 +58,22 @@ Both models achieved impressive accuracy on the BBC News dataset:
 
 ```text
 NEWS-ARTICLE-CATEGORIZER/
-├── backend/            # FastAPI Source Code
-│   ├── main.py         # API Endpoints & Model Loading
-│   └── Dockerfile    
-├── frontend/           # Streamlit UI
-│   ├── app.py        
-│   └── Dockerfile    
-├── data/               # Dataset (bbc_text.csv)
-├── models/             # Trained .pkl files
-├── src/                # Shared logic
-│   ├── train.py        # Model Training Script
-│   └── utils.py        # Preprocessing Functions
-├── docker-compose.yml  # Local Orchestration
-└── requirements.txt    # Project Dependencies
+├── backend/                # FastAPI Source Code
+│   ├── main.py             # API Endpoints & Model Loading
+│   ├── Dockerfile          
+│   └── requirements.txt    # Backend Dependencies
+├── frontend/               # Streamlit UI
+│   ├── app.py              
+│   ├── Dockerfile          
+│   └── requirements.txt    # Frontend Dependencies
+├── data/                   # Dataset (bbc_text.csv)
+│   └── bbc_text.csv        
+├── models/                 # Trained .pkl files
+├── src/                    # Shared logic
+│   ├── train.py            # Model Training Script
+│   └── utils.py            # Preprocessing Functions
+├── docker-compose.yml      # Local Orchestration
+├── .gitignore              # Git Configuration
+├── LICENSE                 # Legal Terms
+└── packages.txt            # Additional Packages
 ```
